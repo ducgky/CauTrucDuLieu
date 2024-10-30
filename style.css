@@ -1,0 +1,32 @@
+/* Đặt kích thước và font chữ cơ bản */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+    background-image: url('background.jpg'); /* Có thể thay đổi bằng ảnh nền tùy chọn */
+    background-size: cover;
+}
+
+/* Lớp phủ màu */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+    z-index: 1;
+}
+
+/* Định dạng nội dung */
+h1, p {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
